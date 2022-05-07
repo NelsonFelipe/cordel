@@ -1,0 +1,69 @@
+@charset "UTF-8";
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+html, body{
+    /*o tamanho mínino da minha do html e do body será 100% d minha viewport */
+    min-height: 100vh;
+    background-color: lightgray;
+}
+
+header{
+    background-color: black;
+    color: white;
+    /*centraliza o texto, mas creio que haja diferenças do margin:auto;*/
+    text-align: center;
+}
+
+header > h1{
+    padding-top: 50px;
+    /*faz as letras maiúsculas ficarem maiores do que as minúsculas*/
+    font-variant: small-caps;
+}
+
+header > p {
+    padding-bottom: 50px;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+    font-weight: bolder;
+}
+a:hover{
+    text-decoration: underline;
+}
+
+section{
+    /*cria um padding que pega 10% do tamanho do monitor*/
+    padding-top: 10vh;
+    padding-bottom: 10vh;
+    padding-left: 30px;
+    /*cria os espaço entre as linhas dos parágrafos*/
+    line-height: 2em;
+}
+
+section.normal{
+    background-color: white;
+    color: black;
+}
+section.imagem{
+    background-color: rgb(34, 34, 34);
+    color: white;
+}
+section.imagem > p{
+    width: 500px;
+    background-color: rgba(0, 0, 0, 0.583);
+}
+
+
+
+footer{
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 10px;
+}
