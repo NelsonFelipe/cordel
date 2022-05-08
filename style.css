@@ -52,6 +52,7 @@ a:hover{
 
 section{
     font-family: var(--fonte3);
+    /*usando esse 'vw' faz com que o tamanho da letra se ajuste conforme a tela*/
     font-size: 3vw;
     /*cria um padding que pega 10% do tamanho do monitor*/
     padding-top: 10vh;
