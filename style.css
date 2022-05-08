@@ -1,4 +1,14 @@
 @charset "UTF-8";
+/*importando duas fontes do google fonts*/
+@import url('https://fonts.googleapis.com/css2?family=Passion+One&family=Sriracha&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Sriracha&display=swap');
+
+:root{
+    --fonte1: Verdana, Geneva, Tahoma, Sans-serif;
+    --fonte2: 'Passion One', cursive;
+    --fonte3: 'Sriracha', cursive;
+}
 
 * {
     margin: 0px;
@@ -6,6 +16,7 @@
 }
 
 html, body{
+    font-family: var(--fonte1) ;
     /*o tamanho mínino da minha do html e do body será 100% d minha viewport */
     min-height: 100vh;
     background-color: lightgray;
@@ -19,6 +30,8 @@ header{
 }
 
 header > h1{
+    font-family: var(--fonte2);
+    font-size: 9vw;
     padding-top: 50px;
     /*faz as letras maiúsculas ficarem maiores do que as minúsculas*/
     font-variant: small-caps;
@@ -38,6 +51,8 @@ a:hover{
 }
 
 section{
+    font-family: var(--fonte3);
+    font-size: 3vw;
     /*cria um padding que pega 10% do tamanho do monitor*/
     padding-top: 10vh;
     padding-bottom: 10vh;
@@ -55,7 +70,8 @@ section.imagem{
     color: white;
 }
 section.imagem > p{
-    width: 500px;
+    display: inline-block;
+    padding: 5px;
     background-color: rgba(0, 0, 0, 0.583);
 }
 
